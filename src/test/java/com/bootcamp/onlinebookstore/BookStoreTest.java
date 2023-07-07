@@ -2,7 +2,7 @@ package com.bootcamp.onlinebookstore;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BookStoreTest {
     @Test
@@ -11,6 +11,6 @@ public class BookStoreTest {
         Book book = new Book();
         Boolean isBookIssued = bookStore.issue(book);
 
-        assertFalse(isBookIssued);
+        assertTrue(isBookIssued);
     }
 }
