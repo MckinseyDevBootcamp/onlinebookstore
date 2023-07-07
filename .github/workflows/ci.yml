@@ -18,10 +18,10 @@ jobs:
       - name: Run tests
         run: ./gradlew clean test
 
-#      - name: Build artifact
-#        run: ./gradlew build
-#
-#      - name: Publish artifact
-#        uses: actions/upload-artifact@v3
-#        with:
-#          path: build/libs
+      - name: Build artifact
+        run: ./gradlew build
+
+      - name: Publish artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: build/libs
